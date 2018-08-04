@@ -1,0 +1,45 @@
+.JoinForm {
+  background: #FFA200;
+  background: -moz-linear-gradient(top, #FFA200 0%, #FF9F04 19%, #FF8F18 70%, #FF8920 100%);
+  background: -webkit-linear-gradient(top, #FFA200 0%, #FF9F04 19%, #FF8F18 70%, #FF8920 100%);
+  background: linear-gradient(to bottom, #FFA200 0%, #FF9F04 19%, #FF8F18 70%, #FF8920 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa200', endColorstr='#ff8920', GradientType=0);
+  padding: 20px 0 18px;
+
+  &-block {
+    margin: 0 auto;
+    height: 100px;
+    background-color: @White;
+    border-radius: 3px;
+
+    &--shadow {
+      box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        bottom: 11px;
+        left: 12px;
+        top: 80%;
+        width: 48.9%;
+        background: #9B7468;
+        z-index: -1;
+        -webkit-box-shadow: 0 17px 15px #9B7468;
+        -moz-box-shadow: 0 17px 15px #9B7468;
+        box-shadow: 0 17px 15px #9B7468;
+        -webkit-transform: rotate(-0.6deg);
+        -moz-transform: rotate(-0.6deg);
+        transform: rotate(-0.6deg);
+      }
+
+      &:after {
+        -webkit-transform: rotate(0.6deg);
+        -moz-transform: rotate(0.6deg);
+        transform: rotate(0.6deg);
+        right: 12px;
+        left: auto;
+      }
+    }
+  }
+}
