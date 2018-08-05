@@ -16,14 +16,23 @@
     width: 484px;
 
     &Img {
-      margin: 7px 15px 2px 15px;
-      display: inline-block;
-      float: left;
-      shape-outside: circle();
-      -webkit-shape-outside: circle();
+      position: absolute;
       border-radius: 50%;
-      width: 173px;
-      height: 173px;
+
+
+      &Container {
+        position: relative;
+        overflow: hidden;
+        margin: 7px 15px 2px 15px;
+        display: inline-block;
+        float: left;
+        shape-outside: circle();
+        -webkit-shape-outside: circle();
+        border-radius: 50%;
+        width: 173px;
+        height: 173px;
+        transform: scale(-1, 1)
+      }
     }
 
     &Text {
@@ -33,6 +42,10 @@
       line-height: 22px;
       text-align: justify;
       color: @Black;
+
+      &Container{
+        padding-left: 25px;
+      }
     }
   }
 
