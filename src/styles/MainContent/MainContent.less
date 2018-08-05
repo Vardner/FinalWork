@@ -1,0 +1,50 @@
+.MainContent {
+  display: block;
+  padding-top: 47px;
+
+  &-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-round {
+    width: 484px;
+
+    &Img {
+      margin: 7px 15px 2px 15px;
+      display: inline-block;
+      float: left;
+      shape-outside: circle();
+      -webkit-shape-outside: circle();
+      border-radius: 50%;
+      width: 173px;
+      height: 173px;
+    }
+
+    &Text {
+      margin: 0;
+      font-family: "Source Sans Pro Light";
+      font-size: 14px;
+      line-height: 22px;
+      text-align: justify;
+      color: @Black;
+    }
+  }
+
+  &-Tittle {
+    font-family: "Source Sans Pro Light";
+    font-size: 31px;
+    margin: 0;
+    color: @Black;
+
+    &Container {
+      padding-bottom: 15px;
+      padding-left: 25px;
+    }
+  }
+}
